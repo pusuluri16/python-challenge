@@ -17,8 +17,8 @@
 * Text files are genearted for each of the analysis for PyBank and PyPoll and are added to analysis folder.
 
 * Code for PyBank and PyPoll does these steps: 
-              Correctly Reads in the CSV
-              Results Printed out to correctly to terminal
-              Code Runs Error Free
-              Exports results to text file
-              Code is cleaned and commented
+              Correctly Reads in the CSV,
+              Results Printed out to correctly to terminal,
+              Code Runs Error Free,
+              Exports results to text file and
+              Code is cleaned and commented.
