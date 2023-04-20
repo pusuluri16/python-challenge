@@ -13,21 +13,20 @@ with open('PyBank/Resources/budget_data.csv') as file:
     profit_loss =[]
     months =[]
 
-# Define variables
-    total_months = 0
-    net_total_amount = 0
-    monthly_changes = [] 
-    average_change = 0
-    greatest_increase = 0
-    greatest_decrease = 0
-    greatest_increase_month =''
-    greatest_decrease_month = ''
-    
-
     # Read each row of data after the header.
     for row in file_reader:
         months.append(row[0])
         profit_loss.append(row[1])
+
+# Define variables
+total_months = 0
+net_total_amount = 0
+monthly_changes = [] 
+average_change = 0
+greatest_increase = 0
+greatest_decrease = 0
+greatest_increase_month =''
+greatest_decrease_month = ''
 
 # Total number of months in the dataset.
 total_months = len(months)
@@ -70,4 +69,6 @@ output_file.write(f"Total: ${net_total_amount}\n")
 output_file.write(f"Average Change: ${average_change}\n")
 output_file.write(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase})\n")
 output_file.write(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})")
+
+# Close the file after writing is completed.
 output_file.close()
